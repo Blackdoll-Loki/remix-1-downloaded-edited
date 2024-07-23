@@ -10,7 +10,7 @@ import {
   useSubmit,
 } from "@remix-run/react";
 import { useEffect } from "react";
-import { createEmptyUser } from "../api.server";
+import { createEmptyUser } from "../.server/data/dummyjson/users";
 import { usersLoader } from "../.server/loaders/users.loader"
 
 export const action = async () => {

@@ -2,7 +2,7 @@ import React from "react";
 import { Form, redirect, useLoaderData, useMatches } from "@remix-run/react";
 import type { ActionFunctionArgs, } from "@remix-run/node";
 
-import { updateUser } from "../api.server";
+import { updateUser } from "../.server/data/dummyjson/users";
 import { usersSingleLoader } from "../.server/loaders/users.single.loader";
 
 export const action = async ({ params, request }: ActionFunctionArgs) => {

@@ -27,7 +27,7 @@ services:
       - POSTGRES_USER=postgres
       - POSTGRES_DB=postgres
     volumes:
-      - ./postgress-data:/var/lib/posgresql/data
+      - ./postgresql-data:/var/lib/posgresql/data
 
   pgadmin:
     image: dpage/pgadmin4
