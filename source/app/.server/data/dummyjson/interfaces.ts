@@ -22,6 +22,7 @@ export type DummyPost = {
   userId: number;
   tags: string[];
   reactions: {
+    id: number;
     likes: number;
     dislikes: number;
   }

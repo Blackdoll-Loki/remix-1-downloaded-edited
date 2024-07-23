@@ -10,6 +10,9 @@
     "start": "remix-serve ./build/server/index.js",
     "typecheck": "tsc"
   },
+  "prisma":{
+    "seed": "ts-node prisma/seed"
+  },
   "dependencies": {
     "@prisma/client": "^5.17.0",
     "@remix-run/node": "^2.10.3",
