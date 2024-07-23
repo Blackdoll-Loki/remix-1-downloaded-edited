@@ -3,7 +3,7 @@ import { i } from "vite/dist/node/types.d-aGj9QkWt";
 import { DummyUser } from "~/.server/data/dummyjson";
 import { getUrl } from "~/.server/data/dummyjson";
 import type { DummyPost } from "~/.server/data/dummyjson";
-const prisma = new PrismaClient()
+export const prisma = new PrismaClient()
 
 
 const getData = async(id?: number, path = '') => {
