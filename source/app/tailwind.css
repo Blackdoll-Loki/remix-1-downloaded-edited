@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-dvh;
+}
+
+button,
+input {
+  @apply border px-3 py-2 rounded-lg;
+}
+
+.spinner {
+  @apply animate-spin rounded-full border-t-4 border-blue-500;
+}
