@@ -10,7 +10,7 @@ export const action = async ({ params, request }: ActionFunctionArgs) => {
     throw new Response("Id Not Found", { status: 404 });
   }
   const formData = await request.formData();
-  const updates = Object.fromEntries(formData);
+  const updates: any = Object.fromEntries(formData);
   await updateUser(params.userId, updates);
   return redirect(`/users/${params.userId}/edit`);
 };
